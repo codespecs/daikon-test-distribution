@@ -1,0 +1,15 @@
+language: java
+
+## Can I do this when running on multiple OSes?
+# sudo: required
+# dist: trusty
+
+script: ./.travis-build.sh
+
+os:
+  - linux
+  - osx
+jdk:
+  - oraclejdk8
+#  - oraclejdk7
+  - openjdk7
