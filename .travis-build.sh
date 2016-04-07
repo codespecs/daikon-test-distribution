@@ -3,6 +3,6 @@
 # Fail the whole script if any command fails
 set -e
 
-curl -O https://raw.githubusercontent.com/codespecs/daikon/master/scripts/test-distribution.sh
+curl --fail -O https://raw.githubusercontent.com/codespecs/daikon/master/scripts/test-distribution.sh
 
 sh test-distribution.sh
